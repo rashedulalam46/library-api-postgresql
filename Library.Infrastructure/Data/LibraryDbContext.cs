@@ -22,8 +22,15 @@ public class LibraryDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        base.OnModelCreating(modelBuilder);
+        // Set default schema if needed
+        modelBuilder.HasDefaultSchema("library");
 
-        // Configure entity mappings here
+        // Convert all table names to lowercase
+        foreach (var entity in modelBuilder.Model.GetEntityTypes())
+        {
+            entity.SetTableName(entity.GetTableName().ToLower());
+        }
+
+        base.OnModelCreating(modelBuilder);
     }
 }
