@@ -14,7 +14,7 @@ builder.Services.AddControllers();
 builder.Services.AddDbContext<LibraryDbContext>(options =>
 {
     options.UseNpgsql(builder.Configuration.GetConnectionString("ConString"));
-});
+}, ServiceLifetime.Scoped); // explicitly scoped
 
 builder.Services.AddScoped<IAuthorRepository, AuthorRepository>();
 builder.Services.AddScoped<AuthorService>();
