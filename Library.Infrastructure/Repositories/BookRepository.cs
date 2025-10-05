@@ -35,7 +35,7 @@ public class BookRepository : IBookRepository
                         author_name = a.author_name,
                         category_name = c.category_name,
                         publisher_name = p.publisher_name,
-                        isbn = b.ISBN,
+                        isbn = b.isbn,
                         price = b.price,
                         active = b.active,
                         publish_date = b.publish_date
@@ -65,7 +65,7 @@ public class BookRepository : IBookRepository
         existing.author_id = book.author_id;
         existing.category_id = book.category_id;
         existing.publisher_id = book.publisher_id;          
-        existing.ISBN = book.ISBN;
+        existing.isbn = book.isbn;
         existing.price = book.price;
 
         await _context.SaveChangesAsync();
