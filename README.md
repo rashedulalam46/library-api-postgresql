@@ -52,12 +52,9 @@ Open appsettings.json or appsettings.Development.json, and set up your Connectio
   }
 }
 ```
-**3. Apply migrations / create database**
-   
-In the Infrastructure project (or main solution root), run:
-
+**3. Create a new PostgreSQL database**
 ```
-dotnet ef database update
+CREATE DATABASE librarydb;
 ```
 
 This will create the database and necessary tables.
@@ -110,5 +107,6 @@ dotnet publish --configuration Release
 - Feel free to fork or suggest changes via pull requests.
 - Add a LICENSE file if you have specific usage terms.
 - Please document style, code conventions, etc., in a CONTRIBUTING.md.
+
 
 
