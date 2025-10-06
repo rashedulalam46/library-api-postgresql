@@ -7,7 +7,7 @@ This project is structured with clean architecture (Domain, Application, Infrast
 
 ## 📁 Repository Structure
 ```
-LibraryApiSqlServer/
+LibraryApiPostgreSql/
 ├── Library.Api/                   # API / presentation layer (controllers, endpoints)
 ├── Library.Application/           # Application logic
 │   ├── Services/                  # Business services / use cases
@@ -26,8 +26,9 @@ LibraryApiSqlServer/
 ## ⚙️ Prerequisites
 
 - [.NET 9 SDK](https://dotnet.microsoft.com/download) or compatible .NET version  
-- SQL Server instance (local or remote)  
-- (Optional) A tool like **SQL Server Management Studio (SSMS)** for DB inspection  
+- [PostgreSQL] installed and running  
+- A database user and database created (or ability to create)  
+- (Optional) A tool for API testing, like Postman or HTTPie  
 
 ---
 
@@ -36,8 +37,8 @@ LibraryApiSqlServer/
 **1. Clone the repository**
 
 ```bash
-   git clone https://github.com/rashedulalam46/library-api-sqlserver.git
-   cd library-api-sqlserver
+  git clone https://github.com/rashedulalam46/library-api-postgresql.git
+  cd library-api-postgresql
 ```
 
 **2. Configure connection string**
@@ -47,17 +48,9 @@ Open appsettings.json or appsettings.Development.json, and set up your Connectio
 ```
 {
   "ConnectionStrings": {
-    "DefaultConnection": "Server=YOUR_SERVER;Database=LibraryDb;User Id=…;Password=…;"
-  },
-  "Logging": {
-    "LogLevel": {
-      "Default": "Information",
-      "Microsoft.Hosting.Lifetime": "Information"
-    }
-  },
-  "AllowedHosts": "*"
+   "ConString": "Host=localhost;Port=5432;Database=library;Username=postgres;Password=api@123"   
+  }
 }
-
 ```
 **3. Apply migrations / create database**
    
@@ -73,7 +66,7 @@ This will create the database and necessary tables.
 
 ```
 dotnet build
-dotnet run --project Library.Api
+dotnet run
 ```
 
 The default launch URL might be https://localhost:5001 (or as configured). Use a tool like Postman, curl, or HTTPie to test the endpoints.
@@ -117,3 +110,4 @@ dotnet publish --configuration Release
 - Feel free to fork or suggest changes via pull requests.
 - Add a LICENSE file if you have specific usage terms.
 - Please document style, code conventions, etc., in a CONTRIBUTING.md.
+
