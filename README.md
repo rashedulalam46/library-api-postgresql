@@ -43,7 +43,7 @@ LibraryApiPostgreSql/
 
 **2. Configure connection string**
    
-Open appsettings.json or appsettings.Development.json, and set up your ConnectionStrings:DefaultConnection to point to your SQL Server.
+Open appsettings.json or appsettings.Development.json, and set up your ConnectionStrings:ConString to point to your PostgreSQL.
 
 ```
 {
@@ -107,6 +107,7 @@ dotnet publish --configuration Release
 - Feel free to fork or suggest changes via pull requests.
 - Add a LICENSE file if you have specific usage terms.
 - Please document style, code conventions, etc., in a CONTRIBUTING.md.
+
 
 
 
