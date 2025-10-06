@@ -57,7 +57,7 @@ Open appsettings.json or appsettings.Development.json, and set up your Connectio
 CREATE DATABASE librarydb;
 ```
 
-This will create the database and necessary tables.
+Create all the necessary tables.
 
 **4. Build & run the API**
 
@@ -66,7 +66,7 @@ dotnet build
 dotnet run
 ```
 
-The default launch URL might be https://localhost:5001 (or as configured). Use a tool like Postman, curl, or HTTPie to test the endpoints.
+The default launch URL might be https://localhost:5177/api (or as configured). Use a tool like Postman, curl, or HTTPie to test the endpoints.
 
 ## 🛣️ API Endpoints (Examples)
 
@@ -107,6 +107,7 @@ dotnet publish --configuration Release
 - Feel free to fork or suggest changes via pull requests.
 - Add a LICENSE file if you have specific usage terms.
 - Please document style, code conventions, etc., in a CONTRIBUTING.md.
+
 
 
 
