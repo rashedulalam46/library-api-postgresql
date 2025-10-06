@@ -81,12 +81,12 @@ These are sample endpoints — adjust according to actual implementation.
 
 ## ✅ Features & Highlights
 
-- Clean / layered architecture (Domain, Application, Infrastructure)
+- Clean / layered architecture (Domain, Application, Infrastructure, Presentation)
 - Dependency Injection
 - EF Core as data access layer
 - DTOs / ViewModels for input/output
 - Configuration-based connection strings
-- Exception handling, validation, etc. (if implemented)
+- Exception handling, validation, etc.
 
  ## 📦 Deployment
 
