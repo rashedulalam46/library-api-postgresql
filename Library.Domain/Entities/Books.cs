@@ -34,8 +34,7 @@ public class Books
 	public decimal? price { get; set; }
 
 	[DataType(DataType.Date, ErrorMessage = "Invalid date format.")]
-    public DateTime? create_date { get; set; }
-	
+    public DateTime? create_date { get; set; }	
 	
 	[DefaultValue(true)]
 	public bool? active { get; set; }
