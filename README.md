@@ -27,8 +27,9 @@ LibraryApiPostgreSql/
 
 - [.NET 9 SDK](https://dotnet.microsoft.com/download) or compatible .NET version  
 - [PostgreSQL] installed and running  
-- A database user and database created (or ability to create)  
-- (Optional) A tool for API testing, like Postman or HTTPie  
+- A database user and database created (or ability to create)
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) for containerized setup (Optional)
+- A tool for API testing, like Postman or HTTPie  (Optional) 
 
 ---
 
@@ -118,6 +119,7 @@ dotnet publish --configuration Release
 - Feel free to fork or suggest changes via pull requests.
 - Add a LICENSE file if you have specific usage terms.
 - Please document style, code conventions, etc., in a CONTRIBUTING.md.
+
 
 
 
