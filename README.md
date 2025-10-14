@@ -52,6 +52,17 @@ Open appsettings.json or appsettings.Development.json, and set up your Connectio
   }
 }
 ```
+
+If you are using Docker, then use
+
+```
+{
+  "ConnectionStrings": {
+    "ConString": "Server=host.docker.internal;Database=LibraryDb;User Id=…;Password=…;"
+  }
+}
+```
+
 **3. Create a new PostgreSQL database**
 ```
 CREATE DATABASE librarydb;
@@ -107,6 +118,7 @@ dotnet publish --configuration Release
 - Feel free to fork or suggest changes via pull requests.
 - Add a LICENSE file if you have specific usage terms.
 - Please document style, code conventions, etc., in a CONTRIBUTING.md.
+
 
 
 
