@@ -1,4 +1,4 @@
-# Library API — PostgreSQL
+# Library API — (PostgreSQL + Docker)
 
 A simple .NET Core Web API for managing a library system, backed by PostgreSQL as the database.  
 This project is structured with clean architecture (Domain, Application, Infrastructure, API) and supports basic CRUD operations on books, authors, categories, publishers, etc.
