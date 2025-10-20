@@ -2,7 +2,7 @@ using Library.Domain.Entities;
 
 namespace Library.Application.Interfaces;
 
-public interface IPublishersRepository
+public interface IPublisherRepository
 {
     Task<Publishers?> GetByIdAsync(int id);
     Task<IEnumerable<Publishers>> GetAllAsync();
