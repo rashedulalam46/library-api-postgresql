@@ -64,12 +64,9 @@ If you are using Docker, then use
 }
 ```
 
-**3. Create a new PostgreSQL database**
-```
-CREATE DATABASE librarydb;
-```
+**3. Create Database**
 
-Create all the necessary tables.
+Run the SQL script located in Library.Infrastructure/Data/DatabaseScript.sql to create the database and tables. This will create the database and necessary tables.
 
 **4. Build & run the API**
 
@@ -119,6 +116,7 @@ dotnet publish --configuration Release
 - Feel free to fork or suggest changes via pull requests.
 - Add a LICENSE file if you have specific usage terms.
 - Please document style, code conventions, etc., in a CONTRIBUTING.md.
+
 
 
 
